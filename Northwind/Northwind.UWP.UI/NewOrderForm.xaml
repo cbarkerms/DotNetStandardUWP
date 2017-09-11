@@ -1,0 +1,43 @@
+﻿<ContentDialog
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Northwind.UWP.UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:telerikControlsInput="using:Telerik.UI.Xaml.Controls.Input"
+    x:Class="Northwind.UWP.UI.NewOrderForm"
+    mc:Ignorable="d"
+    Title="Northwind - New Order"
+    PrimaryButtonText="Submit Order"
+    SecondaryButtonText="Cancel"
+    PrimaryButtonClick="ContentDialog_SubmitOrderClick"
+    IsPrimaryButtonEnabled="{x:Bind NewOrderViewModel.IsSubmitEnabled, Mode=OneWay}"
+    SecondaryButtonClick="ContentDialog_CancelOrderClick">
+    <ScrollViewer>
+
+        <StackPanel>
+
+            <ComboBox Header="Customer" ItemsSource="{x:Bind NewOrderViewModel.Customers, Mode=OneWay}" SelectedItem="{x:Bind NewOrderViewModel.SelectedCustomer, Mode=TwoWay}" DisplayMemberPath="CompanyName" />
+
+            <ComboBox Header="Product" ItemsSource="{x:Bind NewOrderViewModel.Products, Mode=OneWay}" SelectedItem="{x:Bind NewOrderViewModel.SelectedProduct, Mode=TwoWay}" DisplayMemberPath="ProductName" />
+
+            <TextBox Header="Quantity / Unit" IsEnabled="False" Text="{x:Bind NewOrderViewModel.QuantityPerUnit, Mode=OneWay}" />
+
+            <telerikControlsInput:RadNumericBox Header="Units" Value="{x:Bind NewOrderViewModel.Units, Mode=TwoWay}" />
+
+            <TextBox Header="Price / Unit" IsEnabled="False" Text="{x:Bind NewOrderViewModel.PricePerUnit, Mode=OneWay}" />
+
+            <TextBox Header="Total" IsEnabled="False" Text="{x:Bind NewOrderViewModel.Total, Mode=OneWay}" />
+
+            <StackPanel Orientation="Horizontal" Background="LightGray" Margin="0,10,0,10">
+                <TextBlock Text="Signature" />
+                <InkCanvas x:Name="InkCanvas" MinHeight="100" MinWidth="250" />
+            </StackPanel>
+
+            <TextBlock Text="{x:Bind NewOrderViewModel.Status, Mode=OneWay}" Foreground="{x:Bind NewOrderViewModel.StatusForeground, Mode=OneWay}" />
+
+        </StackPanel>
+
+    </ScrollViewer>
+
+</ContentDialog>
