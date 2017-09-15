@@ -11,8 +11,8 @@
     <AssemblyName>Northwind.UWP.UI</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16267.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.16267.0</TargetPlatformMinVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16278.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16278.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -190,6 +190,9 @@
     <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
       <Version>1.5.1</Version>
     </PackageReference>
+    <PackageReference Include="Telerik.UI.for.UniversalWindowsPlatform">
+      <Version>1.0.0.6</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Northwind.Std.BLL\Northwind.Std.BLL.csproj">
@@ -205,38 +208,6 @@
     <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\ReferencedAssemblies\System.Data.DataSetExtensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=da696acf63be444a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\UI-For-UWP\Binaries\Telerik.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Data, Version=0.0.0.0, Culture=neutral, PublicKeyToken=da696acf63be444a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\UI-For-UWP\Binaries\Telerik.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.UI.Xaml.Chart.UWP, Version=0.0.0.0, Culture=neutral, PublicKeyToken=da696acf63be444a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\UI-For-UWP\Binaries\Telerik.UI.Xaml.Chart.UWP.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.UI.Xaml.Controls.Data.UWP, Version=0.0.0.0, Culture=neutral, PublicKeyToken=da696acf63be444a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\UI-For-UWP\Binaries\Telerik.UI.Xaml.Controls.Data.UWP.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.UI.Xaml.DataVisualization.UWP, Version=0.0.0.0, Culture=neutral, PublicKeyToken=da696acf63be444a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\UI-For-UWP\Binaries\Telerik.UI.Xaml.DataVisualization.UWP.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.UI.Xaml.Grid.UWP, Version=0.0.0.0, Culture=neutral, PublicKeyToken=da696acf63be444a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\UI-For-UWP\Binaries\Telerik.UI.Xaml.Grid.UWP.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.UI.Xaml.Input.UWP, Version=0.0.0.0, Culture=neutral, PublicKeyToken=da696acf63be444a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\UI-For-UWP\Binaries\Telerik.UI.Xaml.Input.UWP.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.UI.Xaml.Primitives.UWP, Version=0.0.0.0, Culture=neutral, PublicKeyToken=da696acf63be444a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\UI-For-UWP\Binaries\Telerik.UI.Xaml.Primitives.UWP.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

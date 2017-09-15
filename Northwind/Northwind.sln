@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26814.1
+VisualStudioVersion = 15.0.26906.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.NET.DAL", "Northwind.NET.DAL\Northwind.NET.DAL.csproj", "{B8B87CA5-F4A1-4826-A905-C143885BE5C4}"
 EndProject
@@ -163,6 +163,8 @@ Global
 		{DEFBA7A4-F725-4AD1-8E24-B8E5B8A10FE2}.ReleaseTrial|x86.ActiveCfg = Release|Any CPU
 		{DEFBA7A4-F725-4AD1-8E24-B8E5B8A10FE2}.ReleaseTrial|x86.Build.0 = Release|Any CPU
 		{C60FB65D-622F-44BA-A52E-D353F02973CC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C60FB65D-622F-44BA-A52E-D353F02973CC}.Debug|Any CPU.Build.0 = Debug|x86
+		{C60FB65D-622F-44BA-A52E-D353F02973CC}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{C60FB65D-622F-44BA-A52E-D353F02973CC}.Debug|ARM.ActiveCfg = Debug|ARM
 		{C60FB65D-622F-44BA-A52E-D353F02973CC}.Debug|ARM.Build.0 = Debug|ARM
 		{C60FB65D-622F-44BA-A52E-D353F02973CC}.Debug|ARM.Deploy.0 = Debug|ARM
