@@ -62,10 +62,10 @@
       <HintPath>..\..\..\..\..\Program Files (x86)\Windows Kits\10\UnionMetadata\Facade\Windows.WinMD</HintPath>
     </Reference>
     <Reference Include="Windows.Foundation.FoundationContract">
-      <HintPath>..\..\..\..\Program Files (x86)\Windows Kits\10\References\10.0.16267.0\Windows.Foundation.FoundationContract\3.0.0.0\Windows.Foundation.FoundationContract.winmd</HintPath>
+      <HintPath>..\..\..\..\Program Files (x86)\Windows Kits\10\References\10.0.16299.0\Windows.Foundation.FoundationContract\3.0.0.0\Windows.Foundation.FoundationContract.winmd</HintPath>
     </Reference>
     <Reference Include="Windows.Foundation.UniversalApiContract">
-      <HintPath>..\..\..\..\Program Files (x86)\Windows Kits\10\References\10.0.16267.0\Windows.Foundation.UniversalApiContract\5.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
+      <HintPath>..\..\..\..\Program Files (x86)\Windows Kits\10\References\10.0.16299.0\Windows.Foundation.UniversalApiContract\5.0.0.0\Windows.Foundation.UniversalApiContract.winmd</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +122,11 @@
     <Content Include="Assets\MainIcon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient">
+      <Version>4.4.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Northwind.Std.BLL\Northwind.Std.BLL.csproj">
       <Project>{1bf5261c-b53b-4399-8842-9968e7808468}</Project>
       <Name>Northwind.Std.BLL</Name>
@@ -130,11 +135,6 @@
       <Project>{defba7a4-f725-4ad1-8e24-b8e5b8a10fe2}</Project>
       <Name>Northwind.Std.DAL</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="System.Data.SqlClient">
-      <Version>4.4.0</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
