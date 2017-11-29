@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B8B87CA5-F4A1-4826-A905-C143885BE5C4}</ProjectGuid>
+    <ProjectGuid>{66EC0547-5AFC-4CB8-A1F9-7DF43700A946}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Northwind.NET.DAL</RootNamespace>

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{C60FB65D-622F-44BA-A52E-D353F02973CC}</ProjectGuid>
+    <ProjectGuid>{A161E7F6-379B-4F72-98CD-DE9E56EA2A25}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Northwind.UWP.UI</RootNamespace>

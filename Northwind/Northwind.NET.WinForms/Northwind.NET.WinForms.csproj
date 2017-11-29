@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8EC5F925-FFF3-48B9-9736-A472564BACE0}</ProjectGuid>
+    <ProjectGuid>{23E7F0FA-A51E-4557-8C43-2CE48043419F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Northwind.NET.WinForms</RootNamespace>
     <AssemblyName>Northwind.WinForms</AssemblyName>
